@@ -9,7 +9,7 @@ tr_wav2=offset+amp*sawtooth(2*pi*freq.*t2,0.5)-0.5;
 tr_wav3=offset+amp*sawtooth(2*pi*freq.*t3,0.5)-0.5;
 amplitude = max(tr_wav1(:)) - min(tr_wav1(:)); %aflam valoarea amplitudinii peak-to-peak
 m=max(tr_wav1);
-f=min(t(tr_wav1==m)); %aflam valoarea lui t atunci cand semnalul are amplitudine maxima, folosim min pentru a lua doar o valoare
+f=min(t1(tr_wav1==m)); %aflam valoarea lui t atunci cand semnalul are amplitudine maxima, folosim min pentru a lua doar o valoare
 slope=amplitude/f %calculam panta cu formula (y-y0)/(x-x0)
 figure(1)
 plot(t1,tr_wav1)
