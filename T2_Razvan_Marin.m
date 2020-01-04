@@ -12,7 +12,7 @@ w0=2*pi/T;
 sq_wav= offset+amp*square(2*pi*freq.*t1,duty)+0.5;
 subplot(3,1,1)
 plot(t1,sq_wav)
-title('Semnal initial dreptunghilar rezolutie 1 ms')
+title('Semnal initial dreptunghilar rezolutie 10 ms')
 
 
 syms t;
